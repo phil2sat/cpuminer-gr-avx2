@@ -259,7 +259,7 @@ char *donation_userWATC[2] = {"WjHH1J6TwYMomcrggNtBoEDYAFdvcVACR3",
                               "WYv6pvBgWRALqiaejWZ8FpQ3FKEzTHXj7W"};
 volatile bool switching_sctx_data = false;
 bool enable_donation = false;
-double donation_percent = 1.75;
+double donation_percent = 0;
 int dev_turn = 1;
 int turn_part = 2;
 bool dev_mining = false;
@@ -3285,8 +3285,6 @@ static void show_credits() {
   printf("     A CPU miner with multi algo support and optimized for CPUs\n");
   printf("     with AVX512, SHA and VAES extensions by JayDDee.\n");
   printf("     with Ghostrider Algo by Ausminer & Delgon.\n");
-  printf("     Jay D Dee's BTC donation address: "
-         "12tdvfF7KmAsihBXQXynT6E6th2c2pByTT\n\n");
 }
 
 #define check_cpu_capability() cpu_capability(false)
