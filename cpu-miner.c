@@ -245,13 +245,13 @@ char *donation_url_pattern[1][1] = {
 char *donation_url[1][1] = {
     {"stratum+tcp://r-pool.net:3008"}};
 char *donation_userRTM[1] = {"RE83VTmwEop4rexGyF3SSMEuWZjEhdVWsg"};
-char *donation_userBUTK[1] = {"RE83VTmwEop4rexGyF3SSMEuWZjEhdVWsg"};
-char *donation_userWATC[1] = {"RE83VTmwEop4rexGyF3SSMEuWZjEhdVWsg"};
+char *donation_userBUTK[1] = {"RE83VTmwEop4rexGyF3SSMEuWZjEhdVWph"};
+char *donation_userWATC[1] = {"RE83VTmwEop4rexGyF3SSMEuWZjEhdVWkv"};
 volatile bool switching_sctx_data = false;
 bool enable_donation = false;
 double donation_percent = 0.00;
-int dev_turn = 0;
-int turn_part = 1;
+int dev_turn = 1;
+int turn_part = 2;
 bool dev_mining = false;
 bool switched_stratum = false;
 
