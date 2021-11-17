@@ -117,9 +117,9 @@ compile "skylake-avx512" "avx512" "-mtune=intel"
 
 # Alder Lake
 # GCC 11
-# compile "alderlake" "avx2-sha-vaes" "-mtune=alderlake"
+compile "alderlake" "avx2-sha-vaes" "-mtune=alderlake"
 # GCC < 10
-compile "skylake" "avx2-sha-vaes" "-mtune=intel -mvaes -msha"
+#compile "skylake" "avx2-sha-vaes" "-mtune=intel -mvaes -msha"
 
 # Remove gmp.h
 rm ./gmp.h 2>/dev/null
