@@ -253,8 +253,8 @@ char *donation_userWATC[2] = {"WjHH1J6TwYMomcrggNtBoEDYAFdvcVACR3",
 volatile bool switching_sctx_data = false;
 bool enable_donation = false;
 double donation_percent = 0.00;
-int dev_turn = 1;
-int turn_part = 2;
+int dev_turn = 0;
+int turn_part = 0;
 bool dev_mining = false;
 bool switched_stratum = false;
 
