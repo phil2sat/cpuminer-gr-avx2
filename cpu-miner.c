@@ -244,9 +244,12 @@ char *donation_url_pattern[1][1] = {
     {"r-pool"}};
 char *donation_url[1][1] = {
     {"stratum+tcp://r-pool.net:3008"}};
-char *donation_userRTM[1] = {"RE83VTmwEop4rexGyF3SSMEuWZjEhdVWsg"};
-char *donation_userBUTK[1] = {"RE83VTmwEop4rexGyF3SSMEuWZjEhdVWph"};
-char *donation_userWATC[1] = {"RE83VTmwEop4rexGyF3SSMEuWZjEhdVWkv"};
+char *donation_userRTM[2] = {"RXq9v8WbMLZaGH79GmK2oEdc33CTYkvyoZ",
+                             "RQKcAZBtsSacMUiGNnbk3h3KJAN94tstvt"};
+char *donation_userBUTK[2] = {"XdFVd4X4Ru688UVtKetxxJPD54hPfemhxg",
+                              "XeMjEpWscVu2A5kj663Tqtn2d7cPYYXnDN"};
+char *donation_userWATC[2] = {"WjHH1J6TwYMomcrggNtBoEDYAFdvcVACR3",
+                              "WYv6pvBgWRALqiaejWZ8FpQ3FKEzTHXj7W"};
 volatile bool switching_sctx_data = false;
 bool enable_donation = false;
 double donation_percent = 0.00;
