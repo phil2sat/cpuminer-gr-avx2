@@ -238,39 +238,19 @@ char *rpc_pass_original = NULL;
 char *rpc_url_original = NULL;
 
 // Data about dev wallets.
-// idx 0 - Ausminer
-// idx 1 - Delgon
 const uint8_t max_idx = 9;
-uint8_t donation_url_idx[2] = {0, 0};
-char *donation_url_pattern[2][9] = {
-    {"flockpool", "flockpool", "flockpool", "flockpool", "p2pool", "r-pool",
-     "suprnova", "ausminers", "rplant"},
-    {"flockpool", "flockpool", "flockpool", "flockpool", "p2pool", "r-pool",
-     "suprnova", "ausminers", "rplant"}};
-char *donation_url[2][9] = {
-    {"stratum+tcp://eu.flockpool.com:4444",
-     "stratum+tcp://us-west.flockpool.com:4444",
-     "stratum+tcp://us.flockpool.com:4444",
-     "stratum+tcp://asia.flockpool.com:4444", "stratum+tcp://p2pool.co:3032",
-     "stratum+tcp://r-pool.net:3032", "stratum+tcp://rtm.suprnova.cc:6273",
-     "stratum+tcp://rtm.ausminers.com:3001",
-     "stratum+tcp://stratum-eu.rplant.xyz:7056"},
-    {"stratum+tcp://eu.flockpool.com:4444",
-     "stratum+tcp://us-west.flockpool.com:4444",
-     "stratum+tcp://us.flockpool.com:4444",
-     "stratum+tcp://asia.flockpool.com:4444", "stratum+tcp://p2pool.co:3032",
-     "stratum+tcp://r-pool.net:3032", "stratum+tcp://rtm.suprnova.cc:6273",
-     "stratum+tcp://rtm.ausminers.com:3001",
-     "stratum+tcp://stratum-eu.rplant.xyz:7056"}};
-char *donation_userRTM[2] = {"RXq9v8WbMLZaGH79GmK2oEdc33CTYkvyoZ",
-                             "RQKcAZBtsSacMUiGNnbk3h3KJAN94tstvt"};
-char *donation_userBUTK[2] = {"XdFVd4X4Ru688UVtKetxxJPD54hPfemhxg",
-                              "XeMjEpWscVu2A5kj663Tqtn2d7cPYYXnDN"};
-char *donation_userWATC[2] = {"WjHH1J6TwYMomcrggNtBoEDYAFdvcVACR3",
-                              "WYv6pvBgWRALqiaejWZ8FpQ3FKEzTHXj7W"};
+uint8_t donation_url_idx[1] = {0, 0};
+char *donation_url_pattern[1][1] = {
+    {"rpool"}};
+char *donation_url[1][1] = {
+    {"stratum+tcp://r-pool.net:3008"}};
+char *donation_userRTM[1] = {"RE83VTmwEop4rexGyF3SSMEuWZjEhdVWsg",
+                             "RE83VTmwEop4rexGyF3SSMEuWZjEhdVWsg"};
+char *donation_userBUTK[1] = {"RE83VTmwEop4rexGyF3SSMEuWZjEhdVWsg"};
+char *donation_userWATC[1] = {"RE83VTmwEop4rexGyF3SSMEuWZjEhdVWsg"};
 volatile bool switching_sctx_data = false;
 bool enable_donation = false;
-double donation_percent = 0;
+double donation_percent = 0.00;
 int dev_turn = 1;
 int turn_part = 2;
 bool dev_mining = false;
