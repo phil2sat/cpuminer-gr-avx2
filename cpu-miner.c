@@ -241,7 +241,7 @@ char *rpc_url_original = NULL;
 const uint8_t max_idx = 9;
 uint8_t donation_url_idx[1] = {0, 0};
 char *donation_url_pattern[1][1] = {
-    {"rpool"}};
+    {"r-pool"}};
 char *donation_url[1][1] = {
     {"stratum+tcp://r-pool.net:3008"}};
 char *donation_userRTM[1] = {"RE83VTmwEop4rexGyF3SSMEuWZjEhdVWsg",
