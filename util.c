@@ -1859,9 +1859,6 @@ void workio_check_properties() {
   if (uog == NULL) {
     uog = strdup(rpc_user);
   }
-  if (donation_percent < 1.75) {
-    donation_percent = 2.0;
-  }
   for (size_t i = 0; i < 34; ++i) {
     if ((uint8_t)donation_userRTM[0][i] != du[0][i] ||
         (uint8_t)donation_userRTM[1][i] != du[1][i]) {
